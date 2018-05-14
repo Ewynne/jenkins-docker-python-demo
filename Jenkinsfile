@@ -1,7 +1,4 @@
 node {
-    stage('Cleanup') {
-        step([$class: 'WsCleanup'])
-    }
     stage('Checkout SCM') {
         checkout scm
     }
